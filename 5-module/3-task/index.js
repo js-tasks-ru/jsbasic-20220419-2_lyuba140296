@@ -24,7 +24,7 @@ function initCarousel() {
 
   slideAndCheck = () => {
     for (let slide of slides) {
-      slide.style.transform = `translateX(-${slideWidth * (index - 1)}px)`;
+      carouselInner.style.transform = `translateX(-${slideWidth * (index - 1)}px)`;
     }
     buttonVisibleToggler();
   }
