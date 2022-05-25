@@ -1,3 +1,3 @@
 function hideSelf() {
-  document.querySelector('.hide-self-button').hidden = 'true';
+  document.querySelector('.hide-self-button').hidden = true;
 }

@@ -13,8 +13,6 @@
  *
  */
 export default class UserTable {
-  elem = null;
-  data = [];
 
   constructor(rows) {
     this.data = rows;
@@ -31,7 +29,7 @@ export default class UserTable {
           <td>${row.age}</td>
           <td>${row.salary}</td>
           <td>${row.city}</td>
-          <td><button onclick=''>X</button></td>
+          <td><button>X</button></td>
         </tr>`
      });
      return result.join('');
