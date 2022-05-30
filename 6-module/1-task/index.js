@@ -54,9 +54,7 @@ export default class UserTable {
    deleteRow(event) {
     const target = event.target; 
     if (target.tagName != 'BUTTON') return; 
-    const index = target.closest('tr').rowIndex;
-  
-    this.data.splice(index - 1, 1);
-    this.reloadTableRows();
+    const index = target.closest('tr');
+    index.remove();
    }
 }
