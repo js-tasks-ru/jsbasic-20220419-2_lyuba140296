@@ -23,7 +23,7 @@ function highlight(table) {
               row.classList.add('unavailable');
             }
           } else {
-            row.setAttribute('hidden', 'true');
+            row.hidden = true;
           }
         }
       }

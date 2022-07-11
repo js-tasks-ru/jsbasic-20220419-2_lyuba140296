@@ -50,7 +50,6 @@ export default class Carousel {
 
     if (btn === null || slide === null) return; 
     
-    // console.log(slide.dataset.id);
     const customEvent = new CustomEvent("product-add", { 
       detail: slide.dataset.id, 
       bubbles: true

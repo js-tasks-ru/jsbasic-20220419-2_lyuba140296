@@ -18,7 +18,7 @@ export default class UserTable {
     this.data = rows;
     this.elem = document.createElement('table');
     this.reloadTableRows();
-    this.elem.onclick = this.deleteRow.bind(this);
+    this.elem.onclick = this.deleteRow;
   }
   
    createRows(rows) {
